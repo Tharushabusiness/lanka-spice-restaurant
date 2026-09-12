@@ -1,0 +1,186 @@
+html{
+    scroll-behavior: smooth;
+}
+
+section{
+    scroll-margin-top: 110px;
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    line-height:1.6;
+}
+
+header{
+    background:#222;
+    padding: 20px 8%;
+    position: sticky;
+    top:0;
+    z-index:1000;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h1{
+    color:white;
+    font-size:28px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    gap:25px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+
+#home{
+    min-height:80vh;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    background: #f4f4f4;
+    padding: 40px 20px;
+}
+#home h2{
+    font-size:48px;
+    margin-bottom:15px;
+}
+
+#home p{
+    font-size:20px;
+    margin-bottom:25px;
+}
+
+button{
+    padding:12px 25px;
+    border:none;
+    cursor: pointer;
+    font-size:16px;
+    background: #e67e22;
+    color:white;
+    border-radius:5px;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:scale(1.05);
+}
+
+section{
+    padding:70px 8%;
+}
+
+section h2{
+    text-align:center;
+    margin-bottom:25px;
+}
+
+#about{
+    text-align:center;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: center;
+    gap:25px;
+    flex-wrap:wrap;
+}
+
+.menu-card{
+    width:280px;
+    padding:25px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.menu-card h3{
+    margin-bottom:10px;
+}
+
+.menu-card p{
+    margin-bottom: 15px;
+}
+
+footer{
+    background: #222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+.menu-card img{
+    width:100%;
+    height:180px;
+    object-fit:cover;
+    margin-bottom:15px;
+}
+
+.menu-card{
+    transition:0.3s;
+}
+
+.menu-card:hover{
+    transform:translatey(-10px);
+    box-shadow:0 10px 25px #888;
+}
+
+@media (max-width: 600px) {
+
+    nav{
+        flex-direction: columm;
+        gap: 15px
+    }
+
+    nav ul{
+        flex-direction:column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    #home h2{
+        font-size: 32px;
+    }
+
+    #home p{
+        font-size:17px;
+    }
+
+    .menu-container{
+        flex-direction: column;
+        align-items:center;
+    }
+
+    .menu-card{
+        width: 100%;
+        max-width:350px;
+    }
+}
+
+.menu-card strong{
+    display: block;
+    margin-bottom: 10px;
+}
+
+.order-btn{
+    background-color: #27ae60;
+    margin-top: 10px;
+}
